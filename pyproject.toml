@@ -1,0 +1,24 @@
+[project]
+name = "docling-test"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Youssef Ibrahim", email = "youssefiibrahim2@gmail.com" }
+]
+requires-python = ">=3.13.15"
+dependencies = [
+    "chromadb>=1.5.9",
+    "docling>=2.134.0",
+    "qdrant-client>=1.19.1",
+    "requests>=2.34.2",
+    "sentence-transformers>=6.1.0",
+    "streamlit>=1.65.0",
+]
+
+[project.scripts]
+docling-test = "docling_test:main"
+
+[build-system]
+requires = ["uv_build>=0.12.18,<0.13.0"]
+build-backend = "uv_build"
